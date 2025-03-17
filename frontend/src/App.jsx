@@ -1,8 +1,8 @@
 import Home from "./pages/Home.jsx";
-import Form from "./pages/Form.jsx";
 import { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layouts/Layout.jsx";
+import About from "./pages/About.jsx"
 
 const LoadingSpinner = () => (
   <div className="flex justify-center items-center min-h-screen">
@@ -21,10 +21,10 @@ const allRoutes = [
     path: "/",
     element: <Home />,
   },
-  // {
-  //   path: "/q/county/",
-  //   element: <Form />,
-  // },
+  {
+    path: "/about",
+    element: <About />,
+  },
   // {
   //   path: "/q/county/:countyID",
   //   element: <Form />,
