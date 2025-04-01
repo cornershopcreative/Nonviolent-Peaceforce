@@ -7,6 +7,11 @@ const Home = () => {
         navigate(`/about`);
     }
 
+    const addYoursClick = () => {
+        console.log("add yours") // to navigation
+        navigate(`/addyours`);
+    }
+
     return (
         <div className="min-h-screen bg-[#e6e0f8] text-[#1A1A40]">
         {/* Header */}
