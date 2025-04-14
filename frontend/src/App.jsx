@@ -2,7 +2,7 @@ import Home from "./pages/Home.jsx";
 import { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layouts/Layout.jsx";
-import About from "./pages/About.jsx"
+import About from "./pages/About.jsx";
 import AddYours from "./pages/AddYours.jsx";
 const LoadingSpinner = () => (
   <div className="flex justify-center items-center min-h-screen">
@@ -27,12 +27,12 @@ const allRoutes = [
   },
   {
     path: "/addyours",
-    element: <AddYours/>,
+    element: <AddYours />,
   },
   {
     path: "/map",
     element: <Map />,
-  }
+  },
 ];
 
 const router = createBrowserRouter(
