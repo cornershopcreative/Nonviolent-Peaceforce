@@ -46,11 +46,44 @@ const Layout = ({ children }) => {
         {children}
       </main>
 
-      <footer className="bg-gray-100 p-3 md:p-4 mt-4 md:mt-8">
-        <div className="container mx-auto text-center text-gray-600 text-sm md:text-base">
-          &copy; {new Date().getFullYear()} DSSD Madison
+      <footer className="bg-indigo-900 py-8 px-12 text-white">
+      <div className="container mx-auto grid grid-cols-4 gap-4">
+        {/* Column 1 - Connecting Communities */}
+        <div className="col-span-1">
+          <h2 className="font-bold text-xl text-yellow-300" style={{ fontFamily: 'cursive' }}>
+            CONNECTING<br />
+            COMMUNITIES<br />
+            ACROSS THE MAP!
+          </h2>
         </div>
-      </footer>
+
+        {/* Column 2 - Contact Info */}
+        <div className="col-span-1 flex flex-col items-start justify-start">
+          <h3 className="text-lg font-semibold mb-1">Contact</h3>
+          <a href="mailto:email@email.org" className="text-white hover:text-yellow-300 transition-colors">
+            email@email.org
+          </a>
+        </div>
+
+        {/* Column 3 - NP Logo */}
+        <div className="col-span-1 flex flex-col items-start">
+          <p className="mb-2">A project of</p>
+          <div className="w-16 h-16 bg-white rounded-full overflow-hidden">
+            <div className="bg-gradient-to-br from-orange-400 to-orange-600 w-full h-full flex items-center justify-center">
+              <span className="font-bold text-white text-2xl">NP</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Column 4 - DSSD Logo */}
+        <div className="col-span-1 flex flex-col items-start">
+          <p className="mb-2">Powered by</p>
+          <div className="w-16 h-16 bg-white flex items-center justify-center">
+            <span className="font-bold text-blue-500 text-lg">DSSD</span>
+          </div>
+        </div>
+      </div>
+    </footer>
     </div>
   );
 };

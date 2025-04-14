@@ -29,18 +29,10 @@ const allRoutes = [
     path: "/addyours",
     element: <AddYours/>,
   },
-  // {
-  //   path: "/q/county/:countyID",
-  //   element: <Form />,
-  // },
-  // {
-  //   path: "/incentives/",
-  //   element: <IncentivesList />,
-  // },
-  // {
-  //   path: "/incentives/:encodedAnswers",
-  //   element: <IncentivesList />,
-  // },
+  {
+    path: "/map",
+    element: <Map />,
+  }
 ];
 
 const router = createBrowserRouter(

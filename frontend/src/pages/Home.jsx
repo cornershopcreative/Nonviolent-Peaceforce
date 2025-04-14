@@ -84,20 +84,6 @@ const Home = () => {
             </div>
         </div>
         </div>
-
-        {/* Footer */}
-        <footer className="bg-[#1A1A40] text-white text-center p-6 relative">
-            <p className="text-yellow-400 text-lg font-bold">LOREM IPSUM SAFETY PAGE!</p>
-            <p className="text-sm mt-2">Contact: email@email.org</p>
-
-            <div className="flex justify-center gap-4 mt-4">
-                <span className="bg-orange-500 px-4 py-2 rounded-md font-bold">NP</span>
-                <span className="bg-gray-600 px-4 py-2 rounded-md font-bold">DSSD</span>
-            </div>
-
-                {/* Wavy Design Effect */}
-            <div className="absolute bottom-0 left-0 w-40 h-40 bg-[#1A1A40] rounded-full blur-3xl opacity-30"></div>
-        </footer>
     </div>
     );
 };

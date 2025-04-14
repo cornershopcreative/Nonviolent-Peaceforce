@@ -131,24 +131,9 @@ const AddYours = () => {
     </button>
   </div>
 </form>
-
-
           </div>
-
-          
         </div>
       </section>
-
-
-      {/* Footer */}
-      <footer className="bg-purple-200 text-center p-8 mt-auto">
-        <p className="text-lg font-bold mb-1">Lorem Ipsum Safety Page!</p>
-        <p className="mb-2">Contact: email@email.org</p>
-        <p>
-          A project of <span className="font-bold">NP</span> &amp; 
-          <span className="font-bold"> DSSD</span>
-        </p>
-      </footer>
     </div>
   );
 };
