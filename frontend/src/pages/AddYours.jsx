@@ -139,10 +139,6 @@ const AddYours = () => {
         </div>
       </section>
 
-      {/* Call to Action / Questions Button */}
-      <section className="py-8 flex justify-center">
-        <button className="btn btn-primary">Questions?</button>
-      </section>
 
       {/* Footer */}
       <footer className="bg-purple-200 text-center p-8 mt-auto">
