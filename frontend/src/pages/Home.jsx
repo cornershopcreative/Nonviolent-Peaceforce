@@ -1,9 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useRef, useEffect, Children } from "react";
+import MapComponent from "../components/Map";
+
 const Home = () => {
   const navigate = useNavigate();
-  const onClick = () => {
+
+  const goToAbout = () => {
     navigate(`/about`);
+  };
+
+  const goToMap = () => {
+    navigate(`/map`);
   };
 
   return (
@@ -39,20 +46,17 @@ const Home = () => {
         {/* Map Section */}
         <div className="bg-white border border-gray-300 rounded-lg shadow-md p-6 my-6">
           <div className="h-64 bg-blue-50 flex items-center justify-center rounded-md relative overflow-hidden">
-            {/* US Map placeholder */}
-            <div className="absolute inset-0 bg-blue-50">
-              <div className="w-full h-full relative">
-                {/* Simplified US outline */}
-                <div className="absolute top-1/4 left-1/4 right-1/4 bottom-1/4 bg-gray-100 rounded-lg"></div>
-              </div>
+            {/* Map preview */}
+            <div className="absolute inset-0">
+              <MapComponent height="100%" />
             </div>
 
             {/* Button positioned over the map */}
             <button
-              onClick={onClick}
+              onClick={goToMap}
               className="bg-indigo-900 text-white px-6 py-2 rounded-full hover:bg-indigo-800 transition duration-300 z-10"
             >
-              GO TO MAP
+              EXPLORE FULL MAP
             </button>
           </div>
         </div>
