@@ -4,7 +4,6 @@ import {
   Geographies,
   Geography,
   Marker,
-  ZoomableGroup,
 } from "react-simple-maps";
 import geoData from "../political_violence_partnerships.json";
 
@@ -92,20 +91,13 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
 
   return (
     <div
-      className="bg-white rounded-lg shadow-lg p-4 relative w-full"
+      className="bg-white rounded-lg shadow-lg p-4 relative"
       style={{ height }}
     >
       <ComposableMap
         projection="geoAlbersUsa"
         projectionConfig={{
-          scale: 900,
-        }}
-        width={800}
-        height={500}
-        style={{
-          width: "100%",
-          height: "100%",
-          margin: "0 auto",
+          scale: 1000,
         }}
       >
         <Geographies geography={geoUrl}>
