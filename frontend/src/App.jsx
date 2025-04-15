@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layouts/Layout.jsx";
 import About from "./pages/About.jsx";
 import AddYours from "./pages/AddYours.jsx";
+import Map from "./pages/Map.jsx";
 const LoadingSpinner = () => (
   <div className="flex justify-center items-center min-h-screen">
     <div className="loading loading-spinner loading-lg text-primary"></div>

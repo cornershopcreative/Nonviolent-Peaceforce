@@ -1,9 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useRef, useEffect, Children } from "react";
+import MapComponent from "../components/Map.jsx";
+
 const Home = () => {
   const navigate = useNavigate();
-  const onClick = () => {
+
+  const goToAbout = () => {
     navigate(`/about`);
+  };
+
+  const goToMap = () => {
+    navigate(`/map`);
   };
 
   return (
@@ -20,7 +27,7 @@ const Home = () => {
                 </p>
             </div> */}
 
-        <div className="flex flex-col md:flex-row items-center justify-center md:gap-12 px-4 md:px-0">
+        <div className="flex flex-col md:flex-row items-center justify-center md:gap-12 px-4 md:px-0 mb-12">
           <h3 className="text-3xl font-bold text-indigo-900 text-center md:text-left md:w-1/3">
             connect
             <br />
@@ -37,23 +44,19 @@ const Home = () => {
         </div>
 
         {/* Map Section */}
-        <div className="bg-white border border-gray-300 rounded-lg shadow-md p-6 my-6">
-          <div className="h-64 bg-blue-50 flex items-center justify-center rounded-md relative overflow-hidden">
-            {/* US Map placeholder */}
-            <div className="absolute inset-0 bg-blue-50">
-              <div className="w-full h-full relative">
-                {/* Simplified US outline */}
-                <div className="absolute top-1/4 left-1/4 right-1/4 bottom-1/4 bg-gray-100 rounded-lg"></div>
-              </div>
+        <div className="bg-white rounded-lg shadow-xl overflow-hidden relative">
+          <div className="h-[400px] relative">
+            <div className="absolute inset-0">
+              <MapComponent height="100%" />
             </div>
-
-            {/* Button positioned over the map */}
-            <button
-              onClick={onClick}
-              className="bg-indigo-900 text-white px-6 py-2 rounded-full hover:bg-indigo-800 transition duration-300 z-10"
-            >
-              GO TO MAP
-            </button>
+            <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+              <button
+                onClick={goToMap}
+                className="bg-indigo-900 text-white px-8 py-3 rounded-full hover:bg-indigo-800 transition duration-300 shadow-lg transform hover:scale-105"
+              >
+                EXPLORE FULL MAP
+              </button>
+            </div>
           </div>
         </div>
       </main>
