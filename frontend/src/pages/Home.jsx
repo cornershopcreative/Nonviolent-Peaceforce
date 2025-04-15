@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useRef, useEffect, Children } from "react";
-import MapComponent from "../components/Map";
+import MapComponent from "../components/Map.jsx";
 
 const Home = () => {
   const navigate = useNavigate();

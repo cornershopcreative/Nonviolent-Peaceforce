@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MapComponent from "../components/Map";
+import MapComponent from "../components/Map.jsx";
 
 const Map = () => {
 	const [selectedLocation, setSelectedLocation] = useState(null);
