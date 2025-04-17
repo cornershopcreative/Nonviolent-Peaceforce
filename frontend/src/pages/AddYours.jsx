@@ -116,7 +116,7 @@ const AddYours = () => {
         <h2 className="text-2xl">The SafetyNet of Community Care</h2>
       </section>
 
-      {/* Main Content Section */}
+    
       <section className="bg-indigo-950 py-12 px-4">
         <div className="max-w-4xl mx-auto space-y-4">
           <div>
