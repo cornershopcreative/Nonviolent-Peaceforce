@@ -81,7 +81,7 @@ const Home = () => {
           {/* Right side - Buttons */}
           <div className="flex flex-col gap-4">
             <a
-              href="#"
+              href="https://bridgingdivides.princeton.edu/policy/elevating-de-escalation-and-community-safety-approaches"
               className="bg-pink-300 text-indigo-900 py-3 px-6 rounded-full text-center font-medium hover:bg-pink-400 transition-colors"
             >
               De-escalation
@@ -89,7 +89,7 @@ const Home = () => {
               Resources
             </a>
             <a
-              href="#"
+              href="https://www.mutualaidhub.org/"
               className="bg-pink-300 text-indigo-900 py-3 px-6 rounded-full text-center font-medium hover:bg-pink-400 transition-colors"
             >
               Mutual Aid
@@ -97,7 +97,7 @@ const Home = () => {
               Hub
             </a>
             <a
-              href="#"
+              href="https://map.reach4help.org/?lang=en&map=42.40397148650272%2C-75.99004231516555%2C6"
               className="bg-pink-300 text-indigo-900 py-3 px-6 rounded-full text-center font-medium hover:bg-pink-400 transition-colors"
             >
               Reach 4 Help
