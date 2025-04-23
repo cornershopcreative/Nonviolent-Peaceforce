@@ -8,7 +8,6 @@ import {
 } from "react-simple-maps";
 import { getResources } from "../services/resourceService";
 
-// US map projection with counties and boroughs
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
 
 const MapComponent = ({ onLocationSelect, height = "600px" }) => {
@@ -17,34 +16,60 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
   const [locationData, setLocationData] = useState(null);
   const [popupPosition, setPopupPosition] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [position, setPosition] = useState({ coordinates: [0, 0], zoom: 1 });
+  const [position, setPosition] = useState({
+    coordinates: [-97, 38], // Center of the continental US
+    zoom: 1,
+  });
   const mapRef = useRef(null);
+
+  const defaultPosition = {
+    coordinates: [-97, 38], // Re-centers map to continental US
+    zoom: 1,
+  };
+
+  const getPinSize = (zoom) => {
+    return Math.max(2, Math.min(8, 8 - (zoom - 1) * 0.75));
+  };
+
+  const resetZoom = () => {
+    setSelectedLocation(null);
+    setLocationData(null);
+    setPopupPosition(null);
+    setPosition({ ...defaultPosition });
+  };
+
+  const handleZoomIn = () => {
+    setPosition((prev) => ({
+      ...prev,
+      zoom: Math.min(prev.zoom + 1, 20),
+    }));
+  };
+
+  const handleZoomOut = () => {
+    setPosition((prev) => ({
+      ...prev,
+      zoom: Math.max(prev.zoom - 1, 1),
+    }));
+  };
 
   useEffect(() => {
     const fetchAndProcessData = async () => {
       try {
         setLoading(true);
         const resources = await getResources();
-
-        // Create a Map to store unique organizations by coordinates
         const uniqueOrganizations = new Map();
 
-        // Process each resource
         resources.forEach((resource) => {
           if (
             !resource.coordinates ||
             !resource.coordinates.lat ||
             !resource.coordinates.lon
-          ) {
+          )
             return;
-          }
 
           const coordKey = `${resource.coordinates.lat.toFixed(
             4
           )},${resource.coordinates.lon.toFixed(4)}`;
-          const orgKey =
-            resource["Organization Name "] || "Unnamed Organization";
-
           if (!uniqueOrganizations.has(coordKey)) {
             uniqueOrganizations.set(coordKey, {
               coordinates: [resource.coordinates.lon, resource.coordinates.lat],
@@ -52,7 +77,6 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
             });
           }
 
-          // Check if this organization is already in the array
           const existingOrgs = uniqueOrganizations.get(coordKey).organizations;
           const isDuplicate = existingOrgs.some(
             (org) =>
@@ -64,10 +88,7 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
           }
         });
 
-        // Convert Map to array of markers
-        const locationMarkers = Array.from(uniqueOrganizations.values());
-
-        setMarkers(locationMarkers);
+        setMarkers(Array.from(uniqueOrganizations.values()));
       } catch (error) {
         console.error("Error fetching resources:", error);
       } finally {
@@ -82,13 +103,11 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
     setSelectedLocation(marker.coordinates);
     setLocationData(marker.organizations);
 
-    // Get the click position relative to the map container
     const rect = mapRef.current.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
     setPopupPosition({ x, y });
 
-    // Center the map on the clicked marker with higher zoom
     setPosition({
       coordinates: marker.coordinates,
       zoom: 8,
@@ -105,8 +124,8 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
     setPopupPosition(null);
   };
 
-  const handleMoveEnd = (position) => {
-    setPosition(position);
+  const handleMoveEnd = (newPosition) => {
+    setPosition(newPosition);
   };
 
   if (loading) {
@@ -117,6 +136,11 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
     );
   }
 
+  const safeCoordinates =
+    Array.isArray(position.coordinates) && position.coordinates.length === 2
+      ? position.coordinates
+      : defaultPosition.coordinates;
+
   return (
     <div
       className="bg-white rounded-lg shadow-lg p-4 relative w-full"
@@ -125,9 +149,7 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
     >
       <ComposableMap
         projection="geoAlbersUsa"
-        projectionConfig={{
-          scale: 900,
-        }}
+        projectionConfig={{ scale: 900 }}
         width={800}
         height={500}
         style={{
@@ -138,7 +160,7 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
       >
         <ZoomableGroup
           zoom={position.zoom}
-          center={position.coordinates}
+          center={safeCoordinates}
           onMoveEnd={handleMoveEnd}
           minZoom={1}
           maxZoom={20}
@@ -152,16 +174,9 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
                   fill="#EAEAEC"
                   stroke="#D6D6DA"
                   style={{
-                    default: {
-                      outline: "none",
-                    },
-                    hover: {
-                      fill: "#F53",
-                      outline: "none",
-                    },
-                    pressed: {
-                      outline: "none",
-                    },
+                    default: { outline: "none" },
+                    hover: { fill: "#F53", outline: "none" },
+                    pressed: { outline: "none" },
                   }}
                 />
               ))
@@ -175,7 +190,7 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
               onClick={(event) => handleMarkerClick(marker, event)}
             >
               <circle
-                r={8}
+                r={getPinSize(position.zoom)}
                 fill={
                   selectedLocation === marker.coordinates ? "#3B82F6" : "#F53"
                 }
@@ -187,29 +202,30 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
         </ZoomableGroup>
       </ComposableMap>
 
-      {/* Popup positioned relative to the map container */}
-      {selectedLocation && popupPosition && (
-        <div
-          className="absolute bg-white p-3 rounded-lg shadow-lg max-h-48 overflow-y-auto border border-gray-300"
-          style={{
-            left: `${popupPosition.x - 150}px`,
-            top: `${popupPosition.y + 15}px`,
-            width: "300px",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <div className="flex justify-between items-center mb-2">
-            <h3 className="text-lg font-bold">{locationData[0].location}</h3>
-            <button
-              onClick={closePopup}
-              className="text-gray-500 hover:text-gray-700"
-            >
-              ×
-            </button>
-          </div>
-          <div className="space-y-2">
-            {locationData && locationData.length > 0 ? (
-              locationData.map((org, index) => (
+      {selectedLocation &&
+        popupPosition &&
+        locationData &&
+        locationData.length > 0 && (
+          <div
+            className="absolute bg-white p-3 rounded-lg shadow-lg max-h-48 overflow-y-auto border border-gray-300"
+            style={{
+              left: `${popupPosition.x - 150}px`,
+              top: `${popupPosition.y + 15}px`,
+              width: "300px",
+              transform: "translateX(-50%)",
+            }}
+          >
+            <div className="flex justify-between items-center mb-2">
+              <h3 className="text-lg font-bold">{locationData[0].location}</h3>
+              <button
+                onClick={closePopup}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                ×
+              </button>
+            </div>
+            <div className="space-y-2">
+              {locationData.map((org, index) => (
                 <div key={index} className="border-b pb-2 text-sm">
                   <h4 className="font-semibold">
                     {org["Organization Name "] || "Unnamed Organization"}
@@ -238,54 +254,30 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
                     </p>
                   )}
                 </div>
-              ))
-            ) : (
-              <p>No organization data available</p>
-            )}
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
       <div className="absolute bottom-4 right-4 flex gap-2">
         <button
-          onClick={() =>
-            setPosition((prev) => ({
-              ...prev,
-              zoom: Math.min(prev.zoom + 1, 20),
-            }))
-          }
+          onClick={resetZoom}
           className="bg-white p-2 rounded-lg shadow-md hover:bg-gray-100"
+          title="Reset Zoom"
         >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M12 5v14M5 12h14" />
-          </svg>
+          🔄
         </button>
         <button
-          onClick={() =>
-            setPosition((prev) => ({
-              ...prev,
-              zoom: Math.max(prev.zoom - 1, 1),
-            }))
-          }
+          onClick={handleZoomIn}
           className="bg-white p-2 rounded-lg shadow-md hover:bg-gray-100"
         >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M5 12h14" />
-          </svg>
+          ➕
+        </button>
+        <button
+          onClick={handleZoomOut}
+          className="bg-white p-2 rounded-lg shadow-md hover:bg-gray-100"
+        >
+          ➖
         </button>
       </div>
     </div>
