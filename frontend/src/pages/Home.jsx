@@ -28,7 +28,8 @@ const Home = () => {
             </div> */}
 
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-12 px-4 md:px-0 mb-12">
-          <h3 className="text-3xl font-bold text-indigo-900 text-center md:text-left md:w-1/3">
+          <h3 className="text-3xl font-bold text-indigo-900 text-center md:text-left md:w-1/3"
+          style={{ fontFamily: "Poppins" }}>
             connect
             <br />
             to safety
@@ -68,7 +69,7 @@ const Home = () => {
           <div className="max-w-xs">
             <h2
               className="text-2xl font-bold mb-4 text-indigo-900"
-              style={{ fontFamily: "cursive" }}
+              style={{ fontFamily: "Chalkduster, fantasy" }}
             >
               OTHER RESOURCES
             </h2>
@@ -83,6 +84,7 @@ const Home = () => {
             <a
               href="https://bridgingdivides.princeton.edu/policy/elevating-de-escalation-and-community-safety-approaches"
               className="bg-pink-300 text-indigo-900 py-3 px-6 rounded-full text-center font-medium hover:bg-pink-400 transition-colors"
+              style={{fontFamily: "Poppins"}}
             >
               De-escalation
               <br />
@@ -91,6 +93,7 @@ const Home = () => {
             <a
               href="https://www.mutualaidhub.org/"
               className="bg-pink-300 text-indigo-900 py-3 px-6 rounded-full text-center font-medium hover:bg-pink-400 transition-colors"
+              style={{fontFamily: "Poppins"}}
             >
               Mutual Aid
               <br />
@@ -99,6 +102,7 @@ const Home = () => {
             <a
               href="https://map.reach4help.org/?lang=en&map=42.40397148650272%2C-75.99004231516555%2C6"
               className="bg-pink-300 text-indigo-900 py-3 px-6 rounded-full text-center font-medium hover:bg-pink-400 transition-colors"
+              style={{fontFamily: "Poppins"}}
             >
               Reach 4 Help
               <br />

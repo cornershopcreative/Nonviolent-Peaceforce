@@ -14,7 +14,9 @@ const Layout = ({ children }) => {
           </div>
 
           {/* Middle: Nav links */}
-          <nav className="flex flex-wrap justify-center gap-4 font-medium text-[#1A1A40] text-lg text-center mt-4 md:mt-0 md:gap-6 md:justify-center">
+          <nav className="flex flex-wrap justify-center gap-4 font-medium text-[#1A1A40] text-lg text-center mt-4 md:mt-0 md:gap-6 md:justify-center"
+              style={{fontFamily: "Poppins", color : '#1A1A40'}}>
+            
             <a href="/about" className="hover:underline">
               About
             </a>
@@ -41,11 +43,13 @@ const Layout = ({ children }) => {
         <div className="bg-[#0d0b5c] text-center py-24 px-6 relative">
           <h1
             className="text-5xl font-bold text-[#E4F046] mb-4"
-            style={{ fontFamily: "TC Milo" }}
+            style={{ fontFamily: "Chalkduster, fantasy" }}
           >
-            Safety connection map
+            Safety Connection Map
           </h1>
-          <p className="text-white text-xl mx-auto max-w-2xl">
+          <p 
+            className="text-white text-xl mx-auto max-w-2xl"
+            style={{ fontFamily: "Poppins", color: '#E895D7' }}>
             community support in crisis—all in one place.
           </p>
           <div className="absolute bottom-0 right-0 w-64 h-64 bg-yellow-300 rounded-full blur-3xl opacity-10"></div>
@@ -56,14 +60,12 @@ const Layout = ({ children }) => {
         {children}
       </main>
 
-      <footer className="bg-indigo-900 py-8 px-12 text-white">
-        <div className="container mx-auto grid grid-cols-4 gap-4">
+      <footer className="bg-indigo-900 py-8 px-6 text-white">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          
           {/* Column 1 - Connecting Communities */}
-          <div className="col-span-1">
-            <h2
-              className="font-bold text-xl text-yellow-300"
-              style={{ fontFamily: "cursive" }}
-            >
+          <div>
+            <h2 className="font-bold text-xl text-yellow-300" style={{ fontFamily: "Chalkduster, fantasy" }}>
               CONNECTING
               <br />
               COMMUNITIES
@@ -73,19 +75,16 @@ const Layout = ({ children }) => {
           </div>
 
           {/* Column 2 - Contact Info */}
-          <div className="col-span-1 flex flex-col items-start justify-start">
-            <h3 className="text-lg font-semibold mb-1">Contact</h3>
-            <a
-              href="mailto:email@email.org"
-              className="text-white hover:text-yellow-300 transition-colors"
-            >
+          <div>
+            <h3 className="text-lg font-semibold mb-1" style={{fontFamily: "Poppins"}}>Contact</h3>
+            <a href="mailto:email@email.org" className="hover:text-yellow-300 transition-colors" style={{fontFamily: "Papyrus"}}>
               email@email.org
             </a>
           </div>
 
           {/* Column 3 - NP Logo */}
-          <div className="col-span-1 flex flex-col items-start">
-            <p className="mb-2">A project of</p>
+          <div>
+            <p className="mb-2" style={{fontFamily: "Poppins"}}>A project of</p>
             <div className="w-16 h-16 bg-white rounded-full overflow-hidden">
               <div className="bg-gradient-to-br from-orange-400 to-orange-600 w-full h-full flex items-center justify-center">
                 <span className="font-bold text-white text-2xl">NP</span>
@@ -94,14 +93,16 @@ const Layout = ({ children }) => {
           </div>
 
           {/* Column 4 - DSSD Logo */}
-          <div className="col-span-1 flex flex-col items-start">
-            <p className="mb-2">Powered by</p>
+          <div>
+            <p className="mb-2" style={{fontFamily: "Poppins"}}>Powered by</p>
             <div className="w-16 h-16 bg-white flex items-center justify-center">
               <span className="font-bold text-blue-500 text-lg">DSSD</span>
             </div>
           </div>
+          
         </div>
       </footer>
+
     </div>
   );
 };
