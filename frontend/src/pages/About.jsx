@@ -8,15 +8,15 @@ const About = () => {
         <section className="py-12 px-8 md:px-16 lg:px-24">
           <div className="max-w-5xl mx-auto space-y-24">
             {/* Why the Map? */}
-            <div className="flex flex-row gap-12 md:gap-16">
-              <h3 className="text-3xl font-bold text-indigo-900 w-1/5">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-16">
+              <h3 className="text-3xl font-bold text-indigo-900 w-full md:w-1/5">
                 Why
                 <br />
                 the
                 <br />
                 Map?
               </h3>
-              <p className="text-indigo-900 w-4/5 max-w-2xl">
+              <p className="text-indigo-900 w-full md:w-4/5 max-w-2xl">
                 In times of crisis, it's crucial for organizations and
                 communities to connect easily and share resources. Rather than
                 being overwhelmed by a flood of information, having a central
@@ -26,15 +26,15 @@ const About = () => {
             </div>
 
             {/* What is Holistic Safety? */}
-            <div className="flex flex-row gap-12 md:gap-16">
-              <h3 className="text-3xl font-bold text-indigo-900 w-1/5">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-16">
+              <h3 className="text-3xl font-bold text-indigo-900 w-full md:w-1/5">
                 What is
                 <br />
                 Holistic
                 <br />
                 Safety?
               </h3>
-              <p className="text-indigo-900 w-4/5 max-w-2xl">
+              <p className="text-indigo-900 w-full md:w-4/5 max-w-2xl">
                 Holistic safety is an approach that focuses on the overall well-
                 being of individuals and communities. It goes beyond physical
                 safety, addressing emotional, mental, and social needs to ensure
@@ -44,15 +44,15 @@ const About = () => {
             </div>
 
             {/* Who is behind the map? */}
-            <div className="flex flex-row gap-12 md:gap-16">
-              <h3 className="text-3xl font-bold text-indigo-900 w-1/5">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-16">
+              <h3 className="text-3xl font-bold text-indigo-900 w-full md:w-1/5">
                 Who is
                 <br />
                 behind
                 <br />
                 the map?
               </h3>
-              <div className="w-4/5 text-indigo-900 space-y-6 max-w-2xl">
+              <div className="w-full md:w-4/5 text-indigo-900 space-y-6 max-w-2xl">
                 <p>
                   <strong>Nonviolent Peaceforce (NP)</strong> is an
                   international organization focused on Unarmed Civilian
@@ -78,8 +78,8 @@ const About = () => {
             </div>
 
             {/* What happens to my data? */}
-            <div className="flex flex-row gap-12 md:gap-16">
-              <h3 className="text-3xl font-bold text-indigo-900 w-1/5">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-16">
+              <h3 className="text-3xl font-bold text-indigo-900 w-full md:w-1/5">
                 What
                 <br />
                 happens
@@ -88,7 +88,7 @@ const About = () => {
                 <br />
                 data?
               </h3>
-              <p className="text-indigo-900 w-4/5 max-w-2xl">
+              <p className="text-indigo-900 w-full md:w-4/5 max-w-2xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -105,7 +105,7 @@ const About = () => {
       <div className="py-8 flex flex-col items-center gap-4">
         <h1 className="text-2xl font-semibold">Questions?</h1>
         <button
-          className="px-6 py-2 rounded-lg btn text-white font-medium"
+          className="px-8 py-4 rounded-lg btn text-black font-medium"
           style={{ backgroundColor: "#fba2df" }}
         >
           Contact Us
