@@ -1,7 +1,7 @@
 {
   "San Diego": [
     {
-      "Organization Name ": "2-1-1 San Diego\u00a0",
+      "Organization Name ": "2-1-1 San Diego ",
       "Category of Resources ": "Non-Profit Orgs",
       "Other Category?": "Other Links",
       "Website URL": "https://211sandiego.org/howwehelp",
@@ -9,21 +9,29 @@
       "Contact Info": "info@211sandiego.org",
       "Description of Resources": "Resource Provider ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "ACLU SD",
       "Category of Resources ": "Non-Profit Orgs",
       "Other Category?": "Other Links",
-      "Website URL": "https://www.aclu-sdic.org/\u00a0",
+      "Website URL": "https://www.aclu-sdic.org/ ",
       "Location (links for mult. locations)": null,
       "Contact Info": "info@aclu-sdic.org",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
-      "Organization Name ": "California Western Community Law Project\u00a0",
+      "Organization Name ": "California Western Community Law Project ",
       "Category of Resources ": "Legal",
       "Other Category?": null,
       "Website URL": "https://www.cwsl.edu/experiential_learning/clinics/community_law_project.html",
@@ -31,21 +39,29 @@
       "Contact Info": "CLP@cwsl.edu",
       "Description of Resources": "Free legal aid ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7226,
+        "lon": -117.1625
+      }
     },
     {
-      "Organization Name ": "Casa Familiar\u00a0",
+      "Organization Name ": "Casa Familiar ",
       "Category of Resources ": "Non-Profit Orgs",
       "Other Category?": null,
       "Website URL": "https://www.casafamiliar.org/programs-and-services/",
       "Location (links for mult. locations)": "268 E Park Ave, San Ysidro, CA 92173",
-      "Contact Info": "\u00a0info@casafamiliar.org",
+      "Contact Info": " info@casafamiliar.org",
       "Description of Resources": "Social service provider ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.5437,
+        "lon": -117.0354
+      }
     },
     {
-      "Organization Name ": "Catholic Charities of San Diego\u00a0",
+      "Organization Name ": "Catholic Charities of San Diego ",
       "Category of Resources ": "Food Access",
       "Other Category?": "Non-Profit Orgs",
       "Website URL": "https://ccdsd.org/",
@@ -53,18 +69,26 @@
       "Contact Info": "(619) 323-2841",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.8197,
+        "lon": -117.1995
+      }
     },
     {
-      "Organization Name ": "Center of Community Solutions\u00a0",
+      "Organization Name ": "Center of Community Solutions ",
       "Category of Resources ": "Psychosocial",
       "Other Category?": "Legal Aid",
       "Website URL": "https://www.ccssd.org/",
       "Location (links for mult. locations)": "4508 Mission Bay Dr, San Diego, CA 92109 ",
-      "Contact Info": "(858) 272-5777\u00a0",
+      "Contact Info": "(858) 272-5777 ",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.8011,
+        "lon": -117.2161
+      }
     },
     {
       "Organization Name ": "IRC San Diego",
@@ -75,7 +99,11 @@
       "Contact Info": "(619) 641-7510",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7521,
+        "lon": -117.0806
+      }
     },
     {
       "Organization Name ": "Jewish Family Services of San Diego",
@@ -86,10 +114,14 @@
       "Contact Info": "(858) 637-3000",
       "Description of Resources": "multiple locations",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.8216,
+        "lon": -117.1376
+      }
     },
     {
-      "Organization Name ": "Legal Aid Society of San Diego\u00a0",
+      "Organization Name ": "Legal Aid Society of San Diego ",
       "Category of Resources ": "Legal",
       "Other Category?": null,
       "Website URL": "https://www.lassd.org/",
@@ -97,10 +129,14 @@
       "Contact Info": "1-877-534-2524",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
-      "Organization Name ": "MAAC Project\u00a0",
+      "Organization Name ": "MAAC Project ",
       "Category of Resources ": "Food Access",
       "Other Category?": "Non-Profit Orgs",
       "Website URL": "https://maacproject.org/",
@@ -108,18 +144,26 @@
       "Contact Info": "info@MAACproject.org",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "San Diego Rapid Response Network",
       "Category of Resources ": "Non-Profit Orgs",
       "Other Category?": null,
-      "Website URL": "https://rapidresponsesd.org/about-us/\u00a0",
+      "Website URL": "https://rapidresponsesd.org/about-us/ ",
       "Location (links for mult. locations)": null,
       "Contact Info": "https://secure.jfssd.org/site/SPageServer/?pagename=contact_sdrrn",
       "Description of Resources": "Coalition working together to respond to dehumanizing immigration enforcement activities, including checkpoints, raids, arrests, and harassment, occurring in SD",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "SD Office of Violence Prevention",
@@ -130,7 +174,11 @@
       "Contact Info": null,
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "Alliance SD",
@@ -141,7 +189,11 @@
       "Contact Info": "(619) 269-1823",
       "Description of Resources": "Civic engagement non-profit that also provides legal services",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "Open Heart Leaders",
@@ -152,7 +204,11 @@
       "Contact Info": "info@OpenHeartLeaders.org",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "Union of Pan Asian Communities",
@@ -163,18 +219,26 @@
       "Contact Info": "619-232-6454",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.716,
+        "lon": -117.1414
+      }
     },
     {
       "Organization Name ": "Crime Survivors for Safety and Justice CA Chapter",
       "Category of Resources ": "Non-Profit Orgs",
       "Other Category?": "Other Links",
-      "Website URL": "https://cssj.org/chapters/\u00a0",
+      "Website URL": "https://cssj.org/chapters/ ",
       "Location (links for mult. locations)": null,
       "Contact Info": null,
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "The Health Alliance for Violence Intervention",
@@ -185,18 +249,26 @@
       "Contact Info": null,
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "University of San Diego School of Law Free Legal Clinic",
       "Category of Resources ": "Legal",
       "Other Category?": null,
-      "Website URL": "https://www.sandiego.edu/law/clinics/free-legal-assistance.php\u00a0\u00a0",
-      "Location (links for mult. locations)": "5998 Alcal\u00e1 Park San Diego, CA 92110",
+      "Website URL": "https://www.sandiego.edu/law/clinics/free-legal-assistance.php  ",
+      "Location (links for mult. locations)": "5998 Alcalá Park San Diego, CA 92110",
       "Contact Info": "(619) 260-7470",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7716,
+        "lon": -117.1897
+      }
     },
     {
       "Organization Name ": "San Diego Volunteer Lawyer Program",
@@ -207,7 +279,11 @@
       "Contact Info": "619.235.5656",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.715,
+        "lon": -117.1592
+      }
     },
     {
       "Organization Name ": "Family Health Center of San Diego",
@@ -218,18 +294,26 @@
       "Contact Info": "(619) 515-2300.",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "UC San Diego Student-Run Free Clinic Project",
       "Category of Resources ": "Healthcare",
       "Other Category?": null,
-      "Website URL": "https://familymedicine.ucsd.edu/education-training/freeclinic/index.html\u00a0",
+      "Website URL": "https://familymedicine.ucsd.edu/education-training/freeclinic/index.html ",
       "Location (links for mult. locations)": "https://familymedicine.ucsd.edu/education-training/freeclinic/about/clinic-sites.html",
       "Contact Info": "ucsdsrfc@health.ucsd.edu",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "San Diego Family Care",
@@ -240,62 +324,86 @@
       "Contact Info": null,
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "Volunteers in Medicine San Diego",
       "Category of Resources ": "Healthcare",
       "Other Category?": null,
-      "Website URL": "https://vim-sandiego.org/services\u00a0",
-      "Location (links for mult. locations)": "1457\u00a0E. Madison Ave., El Cajon, CA 92019",
+      "Website URL": "https://vim-sandiego.org/services ",
+      "Location (links for mult. locations)": "1457 E. Madison Ave., El Cajon, CA 92019",
       "Contact Info": "619-440-4591",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "San Diego EMS, Resources Access Program",
       "Category of Resources ": "Healthcare",
       "Other Category?": "Other Links",
-      "Website URL": "https://www.sandiego.gov/fire/services/ems/rap\u00a0",
+      "Website URL": "https://www.sandiego.gov/fire/services/ems/rap ",
       "Location (links for mult. locations)": null,
       "Contact Info": null,
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "SD Public Library mental health services",
       "Category of Resources ": "Psychosocial",
       "Other Category?": null,
-      "Website URL": "https://www.sandiego.gov/public-library/central-library/mental-health-services#:~:text=Regular%20Hours&text=11:00%20a.m.%20%2D%203:00%20p.m.&text=11:00%20a.m.%20%2D%203:00%20p.m.,-Thursday&text=11:00%20a.m.%20%2D%203:00%20p.m.,-Friday&text=The%20program%20is%20operated%20in,Hygiene%20referrals\u00a0",
+      "Website URL": "https://www.sandiego.gov/public-library/central-library/mental-health-services#:~:text=Regular%20Hours&text=11:00%20a.m.%20%2D%203:00%20p.m.&text=11:00%20a.m.%20%2D%203:00%20p.m.,-Thursday&text=11:00%20a.m.%20%2D%203:00%20p.m.,-Friday&text=The%20program%20is%20operated%20in,Hygiene%20referrals ",
       "Location (links for mult. locations)": "330 Park Blvd. Third Floor, Room 315 San Diego, CA 92101",
       "Contact Info": "619-236-5800",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7084,
+        "lon": -117.1541
+      }
     },
     {
       "Organization Name ": "The National Alliance on Mental Illness in San Diego (NAMI)",
       "Category of Resources ": "Psychosocial",
       "Other Category?": null,
-      "Website URL": "https://namisandiego.org/services/\u00a0",
+      "Website URL": "https://namisandiego.org/services/ ",
       "Location (links for mult. locations)": null,
       "Contact Info": "https://namisandiego.org/contact/",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "San Diego Access and Crisis Line",
       "Category of Resources ": "Other Links",
       "Other Category?": null,
-      "Website URL": "https://www.optumsandiego.com/content/SanDiego/sandiego/en/access---crisis-line.html\u00a0",
+      "Website URL": "https://www.optumsandiego.com/content/SanDiego/sandiego/en/access---crisis-line.html ",
       "Location (links for mult. locations)": null,
       "Contact Info": null,
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "Karen Organization of SD",
@@ -306,7 +414,11 @@
       "Contact Info": "info@karensandiego.org",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7521,
+        "lon": -117.0807
+      }
     },
     {
       "Organization Name ": "National Conflict Resolution Center ",
@@ -317,7 +429,11 @@
       "Contact Info": "(619) 238-2400",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "Somali Bantu Association of America",
@@ -328,7 +444,11 @@
       "Contact Info": "619-946-5599",
       "Description of Resources": "Food pantry address: 4975 University Ave, San Diego, CA 92115",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     },
     {
       "Organization Name ": "We All Got SD",
@@ -339,10 +459,14 @@
       "Contact Info": "WeAllWeGotSanDiego@gmail.com",
       "Description of Resources": "Mutual Aid, lots of resources to other mutual aid groups ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 32.7157,
+        "lon": -117.1611
+      }
     }
   ],
-  "New York": [
+  "NYC": [
     {
       "Organization Name ": "NY Crime Victims Legal Help",
       "Category of Resources ": "Other Links",
@@ -352,7 +476,11 @@
       "Contact Info": null,
       "Description of Resources": "directory of resources",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Empire Justice Center",
@@ -363,7 +491,11 @@
       "Contact Info": "https://empirejustice.org/contact-us/",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Office of Victim Services ",
@@ -374,7 +506,11 @@
       "Contact Info": "1-800-247-8035",
       "Description of Resources": "Victim Services Map: https://finder.nyc.gov/victimservices/locations?mView=map ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Anti-Violence Project ",
@@ -385,7 +521,11 @@
       "Contact Info": "community@avp.org, 212-714-1184",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "ACLU NY",
@@ -396,7 +536,11 @@
       "Contact Info": "212-607-3300",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Violence Intervention Program ",
@@ -407,7 +551,11 @@
       "Contact Info": "800-664-5880",
       "Description of Resources": "Offers workshops on a variety of violence ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "The Institute for Family Health",
@@ -418,7 +566,11 @@
       "Contact Info": "(347) 854-0170",
       "Description of Resources": "Free clinic",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Womankind",
@@ -426,10 +578,14 @@
       "Other Category? (resources can be tagged in more than one category)": "Legal ",
       "Website URL": "https://www.iamwomankind.org/our-services/",
       "Location (links for mult. locations) (if there is no location plz include on \"other links/resources\" page)": "42 Broadway, Ste 1836, New York, NY 10004",
-      "Contact Info": "\u00a0212-732-0054",
+      "Contact Info": " 212-732-0054",
       "Description of Resources": "Formerly New York Asian Women's Center",
       "Existing Partner Y/N": null,
-      "Other Tags": "AAIP"
+      "Other Tags": "AAIP",
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Henry Street Settlement",
@@ -440,7 +596,11 @@
       "Contact Info": "212.766.9200",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Hamilton-Madison House",
@@ -451,7 +611,11 @@
       "Contact Info": "(212) 720-4540",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": "AAIP"
+      "Other Tags": "AAIP",
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Charles B. Wang Community Health Center",
@@ -462,7 +626,11 @@
       "Contact Info": "https://www.cbwchc.org/contact",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": "AAIP"
+      "Other Tags": "AAIP",
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Stop AAIP Hate (resource list)",
@@ -473,7 +641,11 @@
       "Contact Info": "https://stopaapihate.org/contact-us/",
       "Description of Resources": "Resources for individuals experiencing anti-Arab, Muslim, or South Asian Hate",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "South Asian Council for Social Services ",
@@ -484,7 +656,11 @@
       "Contact Info": "(718) 321-7929",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": "AAIP"
+      "Other Tags": "AAIP",
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Office to Prevent Gun Violence ",
@@ -495,7 +671,11 @@
       "Contact Info": null,
       "Description of Resources": "Community resource list",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "The Crime Victims Treatment Center",
@@ -506,7 +686,11 @@
       "Contact Info": "cvtc@cvtcnyc.org, (212) 523-4728 ",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Safe Horizon",
@@ -514,10 +698,14 @@
       "Other Category? (resources can be tagged in more than one category)": "Legal, Psychosocial",
       "Website URL": "https://www.safehorizon.org/our-services/what-we-do/",
       "Location (links for mult. locations) (if there is no location plz include on \"other links/resources\" page)": null,
-      "Contact Info": "212-577-7700\u00a0",
+      "Contact Info": "212-577-7700 ",
       "Description of Resources": "Variety of victim assistance services",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Sikh Coalition",
@@ -528,7 +716,11 @@
       "Contact Info": "https://www.sikhcoalition.org/contact-us/",
       "Description of Resources": "Hate crime prevention",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Met Council Food Netwrok",
@@ -539,7 +731,11 @@
       "Contact Info": "212-453-9500",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Catholic Charities Brooklyn & Queens ",
@@ -547,10 +743,14 @@
       "Other Category? (resources can be tagged in more than one category)": "Psychosocial",
       "Website URL": "https://www.ccbq.org/service-type/emergency-and-food-assistance/",
       "Location (links for mult. locations) (if there is no location plz include on \"other links/resources\" page)": "191 Joralemon Street Brooklyn, NY 11201",
-      "Contact Info": "\u00a0718-722-6001",
+      "Contact Info": " 718-722-6001",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Brooklyn DA's Action Center",
@@ -561,7 +761,11 @@
       "Contact Info": null,
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "YWCA Brooklyn",
@@ -572,7 +776,11 @@
       "Contact Info": "718-875-1190",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Garden of Hope",
@@ -583,7 +791,11 @@
       "Contact Info": "https://www.gohny.org/contact",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": "AAIP"
+      "Other Tags": "AAIP",
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Center for Justice Innovation",
@@ -594,7 +806,11 @@
       "Contact Info": null,
       "Description of Resources": "The Center has many community programs that are specific to neighborhoods-- would be good to include the list in other links section",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "GOSO ",
@@ -605,7 +821,11 @@
       "Contact Info": "212.831.5020",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Elite Learners ",
@@ -616,7 +836,11 @@
       "Contact Info": "347-789-3988",
       "Description of Resources": "Link is to thier anti-violence initiatives ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Elite Victim Resource Unit ",
@@ -625,9 +849,13 @@
       "Website URL": "https://www.evru.nyc/",
       "Location (links for mult. locations) (if there is no location plz include on \"other links/resources\" page)": null,
       "Contact Info": null,
-      "Description of Resources": "\u00a0Community Responders are able to guide you through the aftermath of a violent act.",
+      "Description of Resources": " Community Responders are able to guide you through the aftermath of a violent act.",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Astoria Food Pantry",
@@ -638,7 +866,11 @@
       "Contact Info": "astoriafoodpantry@gmail.com",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Kings Against Violence Initiative",
@@ -647,9 +879,13 @@
       "Website URL": "https://www.kavibrooklyn.org/",
       "Location (links for mult. locations) (if there is no location plz include on \"other links/resources\" page)": "147 Prince Street, Ste. 416, Brooklyn, NY 11201",
       "Contact Info": "info@kavibrooklyn.org, (917) 728-1147",
-      "Description of Resources": "KAVI operates youth violence interventions programs in Central Brooklyn. Our programs take place in schools and hospital-based settings.\u00a0",
+      "Description of Resources": "KAVI operates youth violence interventions programs in Central Brooklyn. Our programs take place in schools and hospital-based settings. ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Street Corner Resources",
@@ -660,7 +896,11 @@
       "Contact Info": "(212) 694-8759, info@scrnyc.org",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Food Help NYC",
@@ -671,7 +911,11 @@
       "Contact Info": null,
       "Description of Resources": "map of where to get free food in NYC",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Free Clinic Directory ",
@@ -682,7 +926,11 @@
       "Contact Info": null,
       "Description of Resources": "Directory of free health clincis in NYC",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Mutual Aid NYC",
@@ -693,7 +941,11 @@
       "Contact Info": null,
       "Description of Resources": "Mutual Aid, links to lots of other groups ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Arab American Association of NY (AAANY)",
@@ -704,7 +956,11 @@
       "Contact Info": " info@arabamericanny.org",
       "Description of Resources": "Arab American Community",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Homecrest Community Services (HCS)",
@@ -715,7 +971,11 @@
       "Contact Info": "718-376-4036",
       "Description of Resources": "AAIP",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "India Home",
@@ -726,7 +986,11 @@
       "Contact Info": "indiahomeusa@gmail.com",
       "Description of Resources": "Indian American Senior Care",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Korean American Civic Empowerment (KACE)",
@@ -734,10 +998,14 @@
       "Other Category? (resources can be tagged in more than one category)": null,
       "Website URL": "https://kace.org/",
       "Location (links for mult. locations) (if there is no location plz include on \"other links/resources\" page)": "35-11 Murray St. #1 Flushing, NY 11354",
-      "Contact Info": "\u00a0info@kace.org",
+      "Contact Info": " info@kace.org",
       "Description of Resources": "Korean American Community ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Laal",
@@ -748,7 +1016,11 @@
       "Contact Info": "info@laalnyc.org",
       "Description of Resources": "Bengali womxn ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Japanese American Association of NY (JAANY)",
@@ -759,7 +1031,11 @@
       "Contact Info": "info@jaany.org",
       "Description of Resources": "Japanese American Community ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Think!Chinatown (T!C)",
@@ -770,7 +1046,11 @@
       "Contact Info": "https://docs.google.com/forms/d/e/1FAIpQLSekeI71sTlFgFTfr_jgQN-fsC_LwrEgBuCNzlHMFjMym80c_Q/viewform",
       "Description of Resources": "Chinese American Community ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "United Chinese Association of Brooklyn (UCA)",
@@ -781,7 +1061,11 @@
       "Contact Info": "https://www.ucaob.org/contact",
       "Description of Resources": "Chinese Immigrant Community ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "YWCA of Queens",
@@ -792,7 +1076,11 @@
       "Contact Info": "info@ywcaqueens.org ",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Council on Arab Islamic Relations NY CAIR-NY)",
@@ -803,7 +1091,11 @@
       "Contact Info": "INFO@NY.CAIR.COM ",
       "Description of Resources": "Muslim community ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Desis Rising Up & Moving (DRUM)",
@@ -814,7 +1106,11 @@
       "Contact Info": null,
       "Description of Resources": "South Asian-Indo-Carribean community",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Malikah",
@@ -825,7 +1121,11 @@
       "Contact Info": " movement@malikah.org",
       "Description of Resources": "Women's protection",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Asian American Bar Association of NY (AABANY)",
@@ -836,7 +1136,11 @@
       "Contact Info": "main@aabany.org",
       "Description of Resources": "AAIP",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Korean Community Services (KCS)",
@@ -847,7 +1151,11 @@
       "Contact Info": "https://www.kcsinc.org/contact/",
       "Description of Resources": "Korean Immigrant Community",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Korean American Family Service Center (KAFSC)",
@@ -858,7 +1166,11 @@
       "Contact Info": "contact@kafsc.org",
       "Description of Resources": "Korean Community ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     },
     {
       "Organization Name ": "Council of Peoples Organizatoin (COPO)",
@@ -869,7 +1181,11 @@
       "Contact Info": "info@copo.org",
       "Description of Resources": "South Asian Community",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 40.7128,
+        "lon": -74.006
+      }
     }
   ],
   "Minneapolis": [
@@ -880,9 +1196,13 @@
       "Website URL": "https://www.hennepinhealthcare.org/support-services/next-step-program/",
       "Location (links for mult. locations)": "825 South 8th Street, Suite 400 Minneapolis, MN 55415",
       "Contact Info": "612-873-2635",
-      "Description of Resources": "Next Step is a hospital-based violence intervention program\u00a0",
+      "Description of Resources": "Next Step is a hospital-based violence intervention program ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9726,
+        "lon": -93.2622
+      }
     },
     {
       "Organization Name ": "Canopy Roots ",
@@ -893,7 +1213,11 @@
       "Contact Info": "info@canopyrootsmn.com",
       "Description of Resources": "Canopy Roots is an innovative mental health organization offering culturally affirming unarmed first responder services to people in crisis via 911. We promote safety for people in crisis by providing emotional de-escalation strategies, crisis intervention support, and connection to appropriate resources.",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.8805,
+        "lon": -93.2871
+      }
     },
     {
       "Organization Name ": "Cure Violence ",
@@ -904,7 +1228,11 @@
       "Contact Info": "https://cvg.org/contact/",
       "Description of Resources": "Global org but operates in Minneapolis",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9778,
+        "lon": -93.265
+      }
     },
     {
       "Organization Name ": "Minneapolis Neighborhood Safety",
@@ -915,7 +1243,11 @@
       "Contact Info": "NeighborhoodSafety@minneapolismn.gov",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9753,
+        "lon": -93.2666
+      }
     },
     {
       "Organization Name ": "TOUCH Outreach",
@@ -926,7 +1258,11 @@
       "Contact Info": "moe@touchoutreach.org  612-367-4414",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9483,
+        "lon": -93.2331
+      }
     },
     {
       "Organization Name ": "Central Minnesota Legal Services ",
@@ -937,7 +1273,11 @@
       "Contact Info": "612) 332-8151",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9805,
+        "lon": -93.2762
+      }
     },
     {
       "Organization Name ": "Volunteer Lawyers Netwrok",
@@ -948,7 +1288,11 @@
       "Contact Info": "(612) 752-6655",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9763,
+        "lon": -93.2703
+      }
     },
     {
       "Organization Name ": "Catholic Charities Twin Cities",
@@ -959,7 +1303,11 @@
       "Contact Info": "(612) 204-8500 info@cctwincities.org",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9637,
+        "lon": -93.257
+      }
     },
     {
       "Organization Name ": "Sojouner Project",
@@ -970,7 +1318,11 @@
       "Contact Info": "info@sojournerproject.org",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9778,
+        "lon": -93.265
+      }
     },
     {
       "Organization Name ": "Esperanza United",
@@ -981,7 +1333,11 @@
       "Contact Info": "info@esperanzaunited.org",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": "Latinx, GBV"
+      "Other Tags": "Latinx, GBV",
+      "coordinates": {
+        "lat": 44.9778,
+        "lon": -93.265
+      }
     },
     {
       "Organization Name ": "Phillips Neighborhood Clinic",
@@ -992,7 +1348,11 @@
       "Contact Info": "612-724-1690",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9516,
+        "lon": -93.2544
+      }
     },
     {
       "Organization Name ": "Friends for a NonViolent World (FNVW)",
@@ -1003,7 +1363,11 @@
       "Contact Info": "info@fnvw.org",
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9537,
+        "lon": -93.1556
+      }
     },
     {
       "Organization Name ": "Office of Community Safety",
@@ -1014,7 +1378,11 @@
       "Contact Info": null,
       "Description of Resources": null,
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9778,
+        "lon": -93.265
+      }
     },
     {
       "Organization Name ": "Twin Cities Mutual Aid Project",
@@ -1025,7 +1393,11 @@
       "Contact Info": "612.756.9607, support@tcmap.org ",
       "Description of Resources": "Mutual Aid, links to lots of other resources ",
       "Existing Partner Y/N": null,
-      "Other Tags": null
+      "Other Tags": null,
+      "coordinates": {
+        "lat": 44.9778,
+        "lon": -93.265
+      }
     }
   ]
 }

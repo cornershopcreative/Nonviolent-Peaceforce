@@ -6,7 +6,7 @@ import {
   Marker,
   ZoomableGroup,
 } from "react-simple-maps";
-import geoData from "../political_violence_partnerships.json";
+import { getResources } from "../services/resourceService";
 
 // US map projection
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
@@ -16,33 +16,47 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [locationData, setLocationData] = useState(null);
   const [popupPosition, setPopupPosition] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Process the JSON data to extract locations and create markers
-    const processData = () => {
-      const locationMarkers = [];
+    const fetchAndProcessData = async () => {
+      try {
+        setLoading(true);
+        const resources = await getResources();
 
-      // Extract locations from the JSON data
-      Object.entries(geoData).forEach(([location, organizations]) => {
-        if (location && organizations.length > 0) {
-          // For now, we'll use a placeholder for coordinates
-          // In a real implementation, you would use a geocoding service to get actual coordinates
-          const coordinates = getCoordinatesForLocation(location);
-
-          if (coordinates) {
-            locationMarkers.push({
-              name: location,
-              coordinates: coordinates,
-              organizations: organizations,
-            });
+        // Group resources by location
+        const resourcesByLocation = resources.reduce((acc, resource) => {
+          const location = resource.location;
+          if (!acc[location]) {
+            acc[location] = [];
           }
-        }
-      });
+          acc[location].push(resource);
+          return acc;
+        }, {});
 
-      setMarkers(locationMarkers);
+        // Create markers for each location
+        const locationMarkers = Object.entries(resourcesByLocation)
+          .map(([location, organizations]) => {
+            const coordinates = getCoordinatesForLocation(location);
+            return coordinates
+              ? {
+                  name: location,
+                  coordinates: coordinates,
+                  organizations: organizations,
+                }
+              : null;
+          })
+          .filter(Boolean);
+
+        setMarkers(locationMarkers);
+      } catch (error) {
+        console.error("Error fetching resources:", error);
+      } finally {
+        setLoading(false);
+      }
     };
 
-    processData();
+    fetchAndProcessData();
   }, []);
 
   // This is a placeholder function - in a real implementation, you would use a geocoding service
@@ -53,6 +67,8 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
       "Los Angeles": [-118.2437, 34.0522],
       "San Francisco": [-122.4194, 37.7749],
       "New York": [-74.006, 40.7128],
+      "New York City": [-74.006, 40.7128], // Added alternative name
+      NYC: [-74.006, 40.7128], // Added alternative name
       Chicago: [-87.6298, 41.8781],
       Houston: [-95.3698, 29.7604],
       Phoenix: [-112.074, 33.4484],
@@ -89,6 +105,14 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
     setLocationData(null);
     setPopupPosition(null);
   };
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-full">
+        <div className="loading loading-spinner loading-lg text-primary"></div>
+      </div>
+    );
+  }
 
   return (
     <div
