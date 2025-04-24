@@ -14,9 +14,9 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8f0ff] text-[#1A1A40]">
+    <div className="min-h-screen bg-[#e6e0f8] text-[#1A1A40]">
       {/* Main Content */}
-      <main className="p-10 bg-gradient-to-b from-[#f8f0ff] to-[#f0e6ff]">
+      <main className="p-10 bg-purple-100">
         {/* <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-indigo-900">connect to safety networks</h2>
                 <p className="text-gray-700 mt-3 max-w-xl mx-auto">
@@ -29,7 +29,7 @@ const Home = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-12 px-4 md:px-0 mb-12">
           <h3 className="text-3xl font-bold text-indigo-900 text-center md:text-left md:w-1/3"
-            style={{ fontFamily: "Poppins" }}>
+          style={{ fontFamily: "Poppins" }}>
             connect
             <br />
             to safety
@@ -45,15 +45,15 @@ const Home = () => {
         </div>
 
         {/* Map Section */}
-        <div className="bg-white/50 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden border border-white/20">
+        <div className="bg-white rounded-lg shadow-xl overflow-hidden relative">
           <div className="h-[400px] relative">
             <div className="absolute inset-0">
               <MapComponent height="100%" />
             </div>
-            <div className="absolute inset-0 bg-white/10 backdrop-blur-[2px] flex items-center justify-center">
+            <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
               <button
                 onClick={goToMap}
-                className="bg-indigo-900/90 backdrop-blur-sm text-white px-8 py-3 rounded-full hover:bg-indigo-800 transition duration-300 shadow-lg transform hover:scale-105 border border-white/20"
+                className="bg-indigo-900 text-white px-8 py-3 rounded-full hover:bg-indigo-800 transition duration-300 shadow-lg transform hover:scale-105"
               >
                 EXPLORE FULL MAP
               </button>
@@ -62,7 +62,7 @@ const Home = () => {
         </div>
       </main>
       {/* Resources Section */}
-      <div className="bg-white/80 backdrop-blur-sm p-8 relative overflow-hidden border-t border-white/20">
+      <div className="bg-white p-8 relative overflow-hidden">
         {/* Centered content container */}
         <div className="flex flex-row justify-center gap-20 relative z-10">
           {/* Left side - Text content */}
@@ -84,7 +84,7 @@ const Home = () => {
             <a
               href="https://bridgingdivides.princeton.edu/policy/elevating-de-escalation-and-community-safety-approaches"
               className="bg-pink-300 text-indigo-900 py-3 px-6 rounded-full text-center font-medium hover:bg-pink-400 transition-colors"
-              style={{ fontFamily: "Poppins" }}
+              style={{fontFamily: "Poppins"}}
             >
               De-escalation
               <br />
@@ -93,7 +93,7 @@ const Home = () => {
             <a
               href="https://www.mutualaidhub.org/"
               className="bg-pink-300 text-indigo-900 py-3 px-6 rounded-full text-center font-medium hover:bg-pink-400 transition-colors"
-              style={{ fontFamily: "Poppins" }}
+              style={{fontFamily: "Poppins"}}
             >
               Mutual Aid
               <br />
@@ -102,7 +102,7 @@ const Home = () => {
             <a
               href="https://map.reach4help.org/?lang=en&map=42.40397148650272%2C-75.99004231516555%2C6"
               className="bg-pink-300 text-indigo-900 py-3 px-6 rounded-full text-center font-medium hover:bg-pink-400 transition-colors"
-              style={{ fontFamily: "Poppins" }}
+              style={{fontFamily: "Poppins"}}
             >
               Reach 4 Help
               <br />

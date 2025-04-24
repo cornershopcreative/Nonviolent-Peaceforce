@@ -11,7 +11,7 @@ const Map = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f8f0ff]">
+    <div className="flex flex-col min-h-screen bg-indigo-950">
       {/* Top Section / Hero */}
       <section className="bg-indigo-950 text-white p-8 flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-2">Resource Map</h1>
@@ -19,13 +19,12 @@ const Map = () => {
       </section>
 
       {/* Main Content Section */}
-      <section className="flex-grow p-6 bg-gradient-to-b from-[#f8f0ff] to-[#f0e6ff]">
-        <div className="max-w-7xl mx-auto bg-white/50 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden border border-white/20"
-          style={{ height: "calc(100vh - 250px)", minHeight: "600px" }}>
-          <MapComponent
-            onLocationSelect={handleLocationSelect}
-            height="100%"
-          />
+      <section className="flex-grow p-6">
+        <div
+          className="bg-white rounded-lg shadow-xl overflow-hidden"
+          style={{ height: "calc(100vh - 250px)", minHeight: "600px" }}
+        >
+          <MapComponent onLocationSelect={handleLocationSelect} height="100%" />
         </div>
       </section>
     </div>
