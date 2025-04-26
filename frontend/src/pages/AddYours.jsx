@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase"; // Adjust this path if needed
 
 const AddYours = () => {
-  //form state
   const [formData, setFormData] = useState({
     orgName: "",
     url: "",
@@ -15,38 +16,31 @@ const AddYours = () => {
 
   const [successMsg, setSuccessMsg] = useState("");
 
-  //FOR FUTURE USE: adding JSON to backend Database
   const addToBackend = async (data) => {
     try {
-      const response = await fetch("https://your-api.com/api/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data), //puts data into JSON
-      });
-
-      if (!response.ok) throw new Error("Failed to sync");
-
-      console.log("Synced to backend!");
+      await addDoc(collection(db, "submitted_resources"), data);
+      console.log("✅ Data added to Firebase");
     } catch (err) {
-      console.error("Error syncing:", err);
+      console.error("❌ Firebase error:", err);
     }
   };
 
   const handleChange = (e) => {
-    const { name, value } = e.target; //destructures, gets the name and then the value
+    const { name, value } = e.target;
     setFormData((prev) => ({
-      //updates form data
-      ...prev, //includes old values
-      [name]: value, //updates just the field containing the name
+      ...prev,
+      [name]: value,
     }));
   };
 
-  const handleSubmit = (e) => {
+  // const extractCityFromLocation = (loc) => { // could be implemented later
+  //   const match = loc.match(/,\s*([A-Za-z\s]+),\s*[A-Z]{2}/);
+  //   return match ? match[1].trim() : "";
+  // };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    //destructure form data
     const {
       orgName,
       url,
@@ -58,21 +52,14 @@ const AddYours = () => {
       description,
     } = formData;
 
-    //checking that all fields  are filled out and that
     const isEmpty =
-      !orgName ||
-      !url ||
-      !location ||
-      !email ||
-      !phone ||
-      !categoryTags ||
-      !extraTags ||
-      !description;
+      !orgName || !url || !location || !email || !phone || !description;
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\+?[\d\s\-().]{7,20}$/;
 
     if (isEmpty) {
-      alert("❌ All fields must be filled out.");
+      alert("❌ All fields except tags must be filled out.");
       return;
     }
 
@@ -86,30 +73,29 @@ const AddYours = () => {
       return;
     }
 
-    //Standardize phone number to put in DB (E.164)
     let digits = phone.replace(/\D/g, "");
     if (digits.length === 10) digits = "1" + digits;
     const standardizedPhone = "+" + digits;
 
-    //updated object with standardized phone
-    //Also adds time stamp in case an organization has repeats.
-    const cleanedFormData = {
-      ...formData,
-      phone: standardizedPhone,
+    const dataForFirestore = {
+      "Organization Name": orgName,
+      "Website URL": url,
+      "Location (links for mult. locations)": location,
+      "Contact Info": standardizedPhone,
+      "Description of Resources": description,
+      "Category of Resources": categoryTags || null,
+      "Other Category?": extraTags || null,
+      "Other Tags": null,
       submittedAt: new Date().toISOString(),
     };
 
-    let key = cleanedFormData.orgName;
-    localStorage.setItem(key, JSON.stringify(cleanedFormData)); //turn form data into JSON
-    console.log("Form submitted:", cleanedFormData);
+    try {
+      await addToBackend(dataForFirestore);
+      localStorage.setItem(orgName, JSON.stringify(dataForFirestore));
+    } catch (err) {
+      console.error("❌ Sync error:", err);
+    }
 
-    //If you want to access a JSON org's data from local storage
-    //const data = JSON.parse(localStorage.getItem("Your Org Name"));
-
-    //When we actually connect to the Database
-    addToBackend(cleanedFormData); // doesn't work right now
-
-    //CLEAR FORM
     setFormData({
       orgName: "",
       url: "",
@@ -121,14 +107,12 @@ const AddYours = () => {
       description: "",
     });
 
-    setSuccessMsg(`✅Form successfully submitted for "${key}"`);
-    //Clear message after 3 seconds
+    setSuccessMsg(`✅Form successfully submitted for "${orgName}"`);
     setTimeout(() => setSuccessMsg(""), 3000);
   };
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Top Section / Hero */}
       <section className="bg-indigo-950 text-white p-8 flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-2">Add Your Own</h1>
         <h2 className="text-2xl">The SafetyNet of Community Care</h2>
@@ -148,7 +132,6 @@ const AddYours = () => {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-2">
                 <div className="grid grid-cols-2 gap-6">
-                  {/* Left column */}
                   <div className="space-y-4">
                     <input
                       type="text"
@@ -156,7 +139,7 @@ const AddYours = () => {
                       name="orgName"
                       value={formData.orgName}
                       onChange={handleChange}
-                      className="w-full p-2 border-2 text-white border-pink-300 bg-transparent  placeholder-pink-200 rounded"
+                      className="w-full p-2 border-2 text-white border-pink-300 bg-transparent placeholder-pink-200 rounded"
                     />
                     <input
                       type="url"
@@ -191,7 +174,6 @@ const AddYours = () => {
                     />
                   </div>
 
-                  {/* Right column */}
                   <div className="space-y-4">
                     <div className="flex gap-4">
                       <input
@@ -221,7 +203,6 @@ const AddYours = () => {
                   </div>
                 </div>
 
-                {/* Submit button */}
                 <div className="flex justify-end">
                   <button
                     type="submit"
