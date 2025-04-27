@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'TC Milo'; 
+  src: url('public/fonts/TCMilo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Garet Regular'; 
+  src: url('public/fonts/GaretRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Garet Bold'; 
+  src: url('public/fonts/GaretBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
