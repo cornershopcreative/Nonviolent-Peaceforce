@@ -14,9 +14,10 @@ const Layout = ({ children }) => {
           </div>
 
           {/* Middle: Nav links */}
-          <nav className="flex flex-wrap justify-center gap-4 font-medium text-[#1A1A40] text-lg text-center mt-4 md:mt-0 md:gap-6 md:justify-center"
-              style={{fontFamily: "Garet Regular", color : '#1A1A40'}}>
-            
+          <nav
+            className="flex flex-wrap justify-center gap-4 font-medium text-[#1A1A40] text-lg text-center mt-4 md:mt-0 md:gap-6 md:justify-center"
+            style={{ fontFamily: "Garet Regular", color: "#1A1A40" }}
+          >
             <a href="/about" className="hover:underline">
               About
             </a>
@@ -47,9 +48,10 @@ const Layout = ({ children }) => {
           >
             Safety Connection Map
           </h1>
-          <p 
+          <p
             className="text-white text-xl mx-auto max-w-2xl"
-            style={{ fontFamily: "Garet Regular", color: '#E895D7' }}>
+            style={{ fontFamily: "Garet Regular", color: "#E895D7" }}
+          >
             community support in crisis—all in one place.
           </p>
           <div className="absolute bottom-0 right-0 w-64 h-64 bg-yellow-300 rounded-full blur-3xl opacity-10"></div>
@@ -62,10 +64,12 @@ const Layout = ({ children }) => {
 
       <footer className="bg-indigo-900 py-8 px-6 text-white">
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          
           {/* Column 1 - Connecting Communities */}
           <div>
-            <h2 className="font-bold text-xl text-yellow-300" style={{ fontFamily: "TC Milo" }}>
+            <h2
+              className="font-bold text-xl text-yellow-300"
+              style={{ fontFamily: "TC Milo" }}
+            >
               CONNECTING
               <br />
               COMMUNITIES
@@ -76,15 +80,26 @@ const Layout = ({ children }) => {
 
           {/* Column 2 - Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-1" style={{fontFamily: "Garet Bold"}}>Contact</h3>
-            <a href="mailto:email@email.org" className="hover:text-yellow-300 transition-colors" style={{fontFamily: "Garet Regular"}}>
+            <h3
+              className="text-lg font-semibold mb-1"
+              style={{ fontFamily: "Garet Bold" }}
+            >
+              Contact
+            </h3>
+            <a
+              href="mailto:email@email.org"
+              className="hover:text-yellow-300 transition-colors"
+              style={{ fontFamily: "Garet Regular" }}
+            >
               email@email.org
             </a>
           </div>
 
           {/* Column 3 - NP Logo */}
           <div>
-            <p className="mb-2" style={{fontFamily: "Garet Regular"}}>A project of</p>
+            <p className="mb-2" style={{ fontFamily: "Garet Regular" }}>
+              A project of
+            </p>
             <div className="w-16 h-16 bg-white rounded-full overflow-hidden">
               <div className="bg-gradient-to-br from-orange-400 to-orange-600 w-full h-full flex items-center justify-center">
                 <span className="font-bold text-white text-2xl">NP</span>
@@ -94,15 +109,15 @@ const Layout = ({ children }) => {
 
           {/* Column 4 - DSSD Logo */}
           <div>
-            <p className="mb-2" style={{fontFamily: "Garet Regular"}}>Powered by</p>
+            <p className="mb-2" style={{ fontFamily: "Garet Regular" }}>
+              Powered by
+            </p>
             <div className="w-16 h-16 bg-white flex items-center justify-center">
               <span className="font-bold text-blue-500 text-lg">DSSD</span>
             </div>
           </div>
-          
         </div>
       </footer>
-
     </div>
   );
 };
