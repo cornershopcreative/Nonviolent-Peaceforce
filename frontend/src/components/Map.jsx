@@ -207,12 +207,17 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
         locationData &&
         locationData.length > 0 && (
           <div
-            className="absolute bg-white p-3 rounded-lg shadow-lg max-h-48 overflow-y-auto border border-gray-300"
+            className="absolute bg-white p-3 rounded-lg shadow-lg border border-gray-300 max-h-48 overflow-y-auto transition-all duration-300 ease-in-out"
             style={{
-              left: `${popupPosition.x - 150}px`,
+              left: `${Math.min(
+                Math.max(popupPosition.x, 160),
+                mapRef.current.offsetWidth - 160
+              )}px`,
               top: `${popupPosition.y + 15}px`,
-              width: "300px",
+              width: window.innerWidth < 640 ? "90%" : "300px",
+              maxWidth: "300px",
               transform: "translateX(-50%)",
+              zIndex: 10,
             }}
           >
             <div className="flex justify-between items-center mb-2">
