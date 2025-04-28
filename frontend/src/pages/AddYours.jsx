@@ -144,7 +144,7 @@ const AddYours = () => {
                     <input
                       type="url"
                       name="url"
-                      placeholder="URL.com"
+                      placeholder="https://URL.com"
                       value={formData.url}
                       onChange={handleChange}
                       className="w-full p-2 border-2 text-white border-pink-300 bg-transparent placeholder-pink-200 rounded"
