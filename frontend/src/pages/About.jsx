@@ -1,7 +1,34 @@
-import React from "react";
+import React, {useState} from "react";
+import emailjs from "@emailjs/browser";
 
 const About = () => {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [showForm, setShowForm] = useState(false);
+const [successMsg, setSuccessMsg] = useState("");
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.send(
+      "",     //  EmailJS service ID
+      "",    // template ID
+      formData,
+      ""      // EmailJS public key
+    )
+    .then((result) => {
+        console.log("Email successfully sent:", result.text);
+        setSuccessMsg("✅ Message successfully sent!");
+        setFormData({ name: "", email: "", message: "" });
+        setShowForm(false);
+        setTimeout(() => setSuccessMsg(""), 3000); // Auto-hide success message after 3s
+      
+    }, (error) => {
+        console.log(error.text);
+        alert("Failed to send message.");
+    });
+  };
+
   return (
+
+    
     <div>
       <div className="flex flex-col min-h-screen bg-purple-100">
         {/* Main Content Section */}
@@ -101,15 +128,71 @@ const About = () => {
           </div>
         </section>
       </div>
-      {/* Call to Action / Questions Button */}
+  
       <div className="py-8 flex flex-col items-center gap-4">
         <h1 className="text-2xl font-semibold">Questions?</h1>
-        <button
-          className="px-8 py-4 rounded-lg btn text-black font-medium"
-          style={{ backgroundColor: "#fba2df" }}
-        >
-          Contact Us
-        </button>
+
+        {/* Success Message */}
+        {successMsg && (
+          <div className="bg-green-100 border border-green-400 text-green-800 px-6 py-4 rounded-lg shadow text-lg text-center mb-4">
+            ✅ Message successfully sent!
+          </div>
+        )}
+
+        {/* Button or Form */}
+        {!successMsg && !showForm && (
+          <button
+            className="px-8 py-4 rounded-lg btn text-black font-medium"
+            style={{ backgroundColor: "#fba2df" }}
+            onClick={() => setShowForm(true)}
+          >
+            Contact Us
+          </button>
+        )}
+
+        {!successMsg && showForm && (
+          <form onSubmit={sendEmail} className="flex flex-col gap-4 items-center">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="border p-2 rounded w-64"
+              value={formData.name}
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="border p-2 rounded w-64"
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              className="border p-2 rounded w-64 h-32"
+              value={formData.message}
+              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              required
+            />
+            <div className="flex gap-4">
+              <button
+                type="submit"
+                className="px-8 py-2 rounded-lg btn text-black font-medium"
+                style={{ backgroundColor: "#fba2df" }}
+              >
+                Send Message
+              </button>
+              <button
+                type="button"
+                className="px-8 py-2 rounded-lg btn text-black font-medium border"
+                onClick={() => setShowForm(false)}
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        )}
       </div>
     </div>
   );
