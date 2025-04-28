@@ -1,34 +1,39 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const About = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [showForm, setShowForm] = useState(false);
-const [successMsg, setSuccessMsg] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.send(
-      "",     //  EmailJS service ID
-      "",    // template ID
-      formData,
-      ""      // EmailJS public key
-    )
-    .then((result) => {
-        console.log("Email successfully sent:", result.text);
-        setSuccessMsg("✅ Message successfully sent!");
-        setFormData({ name: "", email: "", message: "" });
-        setShowForm(false);
-        setTimeout(() => setSuccessMsg(""), 3000); // Auto-hide success message after 3s
-      
-    }, (error) => {
-        console.log(error.text);
-        alert("Failed to send message.");
-    });
+    emailjs
+      .send(
+        "", //  EmailJS service ID
+        "", // template ID
+        formData,
+        "" // EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent:", result.text);
+          setSuccessMsg("✅ Message successfully sent!");
+          setFormData({ name: "", email: "", message: "" });
+          setShowForm(false);
+          setTimeout(() => setSuccessMsg(""), 3000); // Auto-hide success message after 3s
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message.");
+        }
+      );
   };
 
   return (
-
-    
     <div>
       <div className="flex flex-col min-h-screen bg-purple-100">
         {/* Main Content Section */}
@@ -128,7 +133,7 @@ const [successMsg, setSuccessMsg] = useState("");
           </div>
         </section>
       </div>
-  
+
       <div className="py-8 flex flex-col items-center gap-4">
         <h1 className="text-2xl font-semibold">Questions?</h1>
 
@@ -139,8 +144,8 @@ const [successMsg, setSuccessMsg] = useState("");
           </div>
         )}
 
-        {/* Button or Form */}
-        {!successMsg && !showForm && (
+        {/* Contact Us Button */}
+        {!successMsg && (
           <button
             className="px-8 py-4 rounded-lg btn text-black font-medium"
             style={{ backgroundColor: "#fba2df" }}
@@ -150,48 +155,61 @@ const [successMsg, setSuccessMsg] = useState("");
           </button>
         )}
 
-        {!successMsg && showForm && (
-          <form onSubmit={sendEmail} className="flex flex-col gap-4 items-center">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="border p-2 rounded w-64"
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              required
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="border p-2 rounded w-64"
-              value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              required
-            />
-            <textarea
-              placeholder="Your Message"
-              className="border p-2 rounded w-64 h-32"
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              required
-            />
-            <div className="flex gap-4">
+        {/* Modal */}
+        {showForm && (
+          <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+            <div className="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/3 relative">
+              {/* Close Button */}
               <button
-                type="submit"
-                className="px-8 py-2 rounded-lg btn text-black font-medium"
-                style={{ backgroundColor: "#fba2df" }}
-              >
-                Send Message
-              </button>
-              <button
-                type="button"
-                className="px-8 py-2 rounded-lg btn text-black font-medium border"
+                className="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl font-bold"
                 onClick={() => setShowForm(false)}
               >
-                Cancel
+                &times;
               </button>
+
+              <h2 className="text-2xl font-semibold text-center mb-6">
+                Send us a message
+              </h2>
+
+              <form onSubmit={sendEmail} className="flex flex-col gap-4">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="border p-2 rounded w-full"
+                  value={formData.name}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="border p-2 rounded w-full"
+                  value={formData.email}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
+                  required
+                />
+                <textarea
+                  placeholder="Your Message"
+                  className="border p-2 rounded w-full h-32"
+                  value={formData.message}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
+                  required
+                />
+                <button
+                  type="submit"
+                  className="mt-4 bg-pink-300 hover:bg-pink-400 text-black font-medium py-2 rounded-lg"
+                >
+                  Send Message
+                </button>
+              </form>
             </div>
-          </form>
+          </div>
         )}
       </div>
     </div>
