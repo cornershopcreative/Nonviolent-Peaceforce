@@ -41,14 +41,20 @@ const About = () => {
           <div className="max-w-5xl mx-auto space-y-24">
             {/* Why the Map? */}
             <div className="flex flex-col md:flex-row gap-6 md:gap-16">
-              <h3 className="text-3xl font-bold text-indigo-900 w-full md:w-1/5">
+              <h3
+                className="text-3xl font-bold text-indigo-900 w-full md:w-1/5"
+                style={{ fontFamily: "Garet Bold" }}
+              >
                 Why
                 <br />
                 the
                 <br />
                 Map?
               </h3>
-              <p className="text-indigo-900 w-full md:w-4/5 max-w-2xl">
+              <p
+                className="text-indigo-900 w-full md:w-4/5 max-w-2xl"
+                style={{ fontFamily: "Garet Regular" }}
+              >
                 In times of crisis, it's crucial for organizations and
                 communities to connect easily and share resources. Rather than
                 being overwhelmed by a flood of information, having a central
@@ -59,14 +65,20 @@ const About = () => {
 
             {/* What is Holistic Safety? */}
             <div className="flex flex-col md:flex-row gap-6 md:gap-16">
-              <h3 className="text-3xl font-bold text-indigo-900 w-full md:w-1/5">
+              <h3
+                className="text-3xl font-bold text-indigo-900 w-full md:w-1/5"
+                style={{ fontFamily: "Garet Bold" }}
+              >
                 What is
                 <br />
                 Holistic
                 <br />
                 Safety?
               </h3>
-              <p className="text-indigo-900 w-full md:w-4/5 max-w-2xl">
+              <p
+                className="text-indigo-900 w-full md:w-4/5 max-w-2xl"
+                style={{ fontFamily: "Garet Regular" }}
+              >
                 Holistic safety is an approach that focuses on the overall well-
                 being of individuals and communities. It goes beyond physical
                 safety, addressing emotional, mental, and social needs to ensure
@@ -77,7 +89,10 @@ const About = () => {
 
             {/* Who is behind the map? */}
             <div className="flex flex-col md:flex-row gap-6 md:gap-16">
-              <h3 className="text-3xl font-bold text-indigo-900 w-full md:w-1/5">
+              <h3
+                className="text-3xl font-bold text-indigo-900 w-full md:w-1/5"
+                style={{ fontFamily: "Garet Bold" }}
+              >
                 Who is
                 <br />
                 behind
@@ -85,14 +100,14 @@ const About = () => {
                 the map?
               </h3>
               <div className="w-full md:w-4/5 text-indigo-900 space-y-6 max-w-2xl">
-                <p>
+                <p style={{ fontFamily: "Garet Regular" }}>
                   <strong>Nonviolent Peaceforce (NP)</strong> is an
                   international organization focused on Unarmed Civilian
                   Protection, working side-by-side with communities to foster
                   peace, safeguard human lives and dignity, and build safer,
                   more resilient communities through unarmed strategies.
                 </p>
-                <p>
+                <p style={{ fontFamily: "Garet Regular" }}>
                   <strong>
                     Data Science for Sustainable Development (DSSD)
                   </strong>{" "}
@@ -100,7 +115,7 @@ const About = () => {
                   to tackle the technical and ethical challenges in sustainable
                   development through data.
                 </p>
-                <p>
+                <p style={{ fontFamily: "Garet Regular" }}>
                   NP and DSSD (UW-Madison) have teamed up to combine
                   peacebuilding and data science, enhancing community responses
                   by using data-driven solutions to connect users and promote
@@ -111,7 +126,10 @@ const About = () => {
 
             {/* What happens to my data? */}
             <div className="flex flex-col md:flex-row gap-6 md:gap-16">
-              <h3 className="text-3xl font-bold text-indigo-900 w-full md:w-1/5">
+              <h3
+                className="text-3xl font-bold text-indigo-900 w-full md:w-1/5"
+                style={{ fontFamily: "Garet Bold" }}
+              >
                 What
                 <br />
                 happens
@@ -120,7 +138,10 @@ const About = () => {
                 <br />
                 data?
               </h3>
-              <p className="text-indigo-900 w-full md:w-4/5 max-w-2xl">
+              <p
+                className="text-indigo-900 w-full md:w-4/5 max-w-2xl"
+                style={{ fontFamily: "Garet Regular" }}
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
