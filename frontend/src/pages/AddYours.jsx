@@ -114,17 +114,12 @@ const AddYours = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <section className="bg-indigo-950 text-white p-8 flex flex-col items-center">
-        <h1 className="text-4xl font-bold mb-2">Add Your Own</h1>
-        <h2 className="text-2xl">The SafetyNet of Community Care</h2>
+        <h1 className="text-4xl font-bold mb-2">Add Your Resource</h1>
       </section>
 
       <section className="bg-indigo-950 py-12 px-4">
         <div className="max-w-4xl mx-auto space-y-4">
           <div>
-            <h3 className="text-xl text-white font-bold mb-2">
-              Add Your Resource
-            </h3>
-
             {successMsg ? (
               <div className="bg-green-100 border border-green-400 text-green-800 px-6 py-10 rounded-lg mt-6 text-2xl font-bold shadow-md text-center">
                 {successMsg}
