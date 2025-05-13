@@ -87,11 +87,11 @@ const Layout = ({ children }) => {
               Contact
             </h3>
             <a
-              href="mailto:email@email.org"
+              href="mailto:info@nonviolentpeaceforce.org"
               className="hover:text-yellow-300 transition-colors"
               style={{ fontFamily: "Garet Regular" }}
             >
-              email@email.org
+              info@nonviolentpeaceforce.org
             </a>
           </div>
 
@@ -100,11 +100,14 @@ const Layout = ({ children }) => {
             <p className="mb-2" style={{ fontFamily: "Garet Regular" }}>
               A project of
             </p>
-            <div className="w-16 h-16 bg-white rounded-full overflow-hidden">
-              <div className="bg-gradient-to-br from-orange-400 to-orange-600 w-full h-full flex items-center justify-center">
-                <span className="font-bold text-white text-2xl">NP</span>
-              </div>
+            <div className="w-16 h-16">
+              <img src="/NP-RBG.png" alt="" />
             </div>
+            {/* <div className="w-16 h-16 bg-white rounded-full overflow-hidden"> */}
+            {/* <div className="bg-gradient-to-br from-orange-400 to-orange-600 w-full h-full flex items-center justify-center">
+                <span className="font-bold text-white text-2xl">NP</span>
+              </div> */}
+            {/* </div> */}
           </div>
 
           {/* Column 4 - DSSD Logo */}
