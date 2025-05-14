@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebase"; // Adjust this path if needed
+import { db } from "../firebase";
 
 const AddYours = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +18,7 @@ const AddYours = () => {
 
   const addToBackend = async (data) => {
     try {
-      await addDoc(collection(db, "submitted_resources"), data);
+      await addDoc(collection(db, "resources"), data);
       console.log("✅ Data added to Firebase");
     } catch (err) {
       console.error("❌ Firebase error:", err);
@@ -86,6 +86,7 @@ const AddYours = () => {
       "Category of Resources": categoryTags || null,
       "Other Category?": extraTags || null,
       "Other Tags": null,
+      published: "inactive",
       submittedAt: new Date().toISOString(),
     };
 

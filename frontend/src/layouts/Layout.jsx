@@ -103,11 +103,6 @@ const Layout = ({ children }) => {
             <div className="w-16 h-16">
               <img src="/NP-RBG.png" alt="" />
             </div>
-            {/* <div className="w-16 h-16 bg-white rounded-full overflow-hidden"> */}
-            {/* <div className="bg-gradient-to-br from-orange-400 to-orange-600 w-full h-full flex items-center justify-center">
-                <span className="font-bold text-white text-2xl">NP</span>
-              </div> */}
-            {/* </div> */}
           </div>
 
           {/* Column 4 - DSSD Logo */}

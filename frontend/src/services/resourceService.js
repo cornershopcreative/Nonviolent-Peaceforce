@@ -1,11 +1,16 @@
 import { db } from "../firebase";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 const RESOURCES_COLLECTION = "resources";
 
 export const getResources = async () => {
   try {
-    const querySnapshot = await getDocs(collection(db, RESOURCES_COLLECTION));
+    const q = query(
+      collection(db, RESOURCES_COLLECTION),
+      where("published", "==", "active")
+    );
+
+    const querySnapshot = await getDocs(q);
     return querySnapshot.docs.map((doc) => ({
       id: doc.id,
       ...doc.data(),
