@@ -87,11 +87,11 @@ const Layout = ({ children }) => {
               Contact
             </h3>
             <a
-              href="mailto:info@nonviolentpeaceforce.org"
+              href="mailto:CommunityMap@nonviolentpeaceforce.org"
               className="hover:text-yellow-300 transition-colors"
               style={{ fontFamily: "Garet Regular" }}
             >
-              info@nonviolentpeaceforce.org
+              CommunityMap@ nonviolentpeaceforce.org
             </a>
           </div>
 
