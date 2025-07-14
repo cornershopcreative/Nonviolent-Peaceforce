@@ -13,11 +13,12 @@ const About = () => {
     e.preventDefault();
     emailjs
       .send(
-        "", //  EmailJS service ID
-        "", // template ID
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formData,
-        "" // EmailJS public key
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
+
       .then(
         (result) => {
           console.log("Email successfully sent:", result.text);
