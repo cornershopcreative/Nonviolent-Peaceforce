@@ -143,13 +143,38 @@ const About = () => {
                 className="text-indigo-900 w-full md:w-4/5 max-w-2xl"
                 style={{ fontFamily: "Garet Regular" }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                We collect limited data to improve your experience and ensure
+                the platform works as intended. This may include:
+                <ul className="list-disc pl-6 mt-2">
+                  <li>
+                    Information you voluntarily provide through submissions
+                    (e.g., name, email, organization, or any metadata embedded
+                    in your submission)
+                  </li>
+                  <li>
+                    Technical data like IP address, browser type, and submission
+                    timestamp
+                  </li>
+                </ul>
+                <br />
+                We use this data to maintain the platform, measure impact, and
+                support a safer, more effective community. Your data is never
+                sold, and we work only with trusted third parties under strict
+                privacy standards.
+                <br />
+                <br />
+                You retain ownership of your content but grant us a
+                non-exclusive license to use it for platform-related purposes.
+                You are responsible for what you post. You can access, update,
+                or request deletion of your data by contacting us at
+                <a
+                  href="mailto:communitymap@nonviolentpeaceforce.org"
+                  className="text-blue-600 underline"
+                >
+                  {" "}
+                  communitymap@nonviolentpeaceforce.org
+                </a>
+                .
               </p>
             </div>
           </div>

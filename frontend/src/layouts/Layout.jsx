@@ -91,7 +91,9 @@ const Layout = ({ children }) => {
               className="hover:text-yellow-300 transition-colors"
               style={{ fontFamily: "Garet Regular" }}
             >
-              CommunityMap@ nonviolentpeaceforce.org
+              CommunityMap@
+              <br />
+              nonviolentpeaceforce.org
             </a>
           </div>
 
