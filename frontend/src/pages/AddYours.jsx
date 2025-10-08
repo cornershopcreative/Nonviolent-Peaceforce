@@ -10,7 +10,6 @@ const AddYours = () => {
     email: "",
     phone: "",
     categoryTags: "",
-    extraTags: "",
     description: "",
   });
 
@@ -33,11 +32,6 @@ const AddYours = () => {
     }));
   };
 
-  // const extractCityFromLocation = (loc) => { // could be implemented later
-  //   const match = loc.match(/,\s*([A-Za-z\s]+),\s*[A-Z]{2}/);
-  //   return match ? match[1].trim() : "";
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -48,7 +42,6 @@ const AddYours = () => {
       email,
       phone,
       categoryTags,
-      extraTags,
       description,
     } = formData;
 
@@ -84,7 +77,6 @@ const AddYours = () => {
       "Contact Info": standardizedPhone,
       "Description of Resources": description,
       "Category of Resources": categoryTags || null,
-      "Other Category?": extraTags || null,
       "Other Tags": null,
       published: "inactive",
       submittedAt: new Date().toISOString(),
@@ -104,7 +96,6 @@ const AddYours = () => {
       email: "",
       phone: "",
       categoryTags: "",
-      extraTags: "",
       description: "",
     });
 
@@ -172,22 +163,23 @@ const AddYours = () => {
 
                   <div className="space-y-4">
                     <div className="flex gap-4">
-                      <input
-                        type="text"
+                      <select
                         name="categoryTags"
-                        placeholder="Category Tag(s)"
                         value={formData.categoryTags}
                         onChange={handleChange}
                         className="w-full p-2 border-2 text-white bg-purple-200 text-black-800 placeholder-purple-600 rounded"
-                      />
-                      <input
-                        type="text"
-                        placeholder="... Tag(s)"
-                        name="extraTags"
-                        value={formData.extraTags}
-                        onChange={handleChange}
-                        className="w-full p-2 border-2 text-white bg-purple-200 text-black-800 placeholder-purple-600 rounded"
-                      />
+                      >
+                        <option value="">Select a Category</option>
+                        <option value="Food Access">Food Access</option>
+                        <option value="Non-Profit Orgs">Non-Profit Orgs</option>
+                        <option value="Other Links">Other Links</option>
+                        <option value="Legal">Legal</option>
+                        <option value="Psychosocial">Psychosocial</option>
+                        <option value="Trainings">Trainings</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Violence Interruption">Violence Interruption</option>
+                        <option value="Government">Government</option>
+                      </select>
                     </div>
                     <textarea
                       placeholder="Description"
