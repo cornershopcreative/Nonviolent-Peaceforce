@@ -864,6 +864,7 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
                     ? org["Description of Resources"]
                     : null;
                   const website = isCompleteOrg ? org["Website URL"] : null;
+                  const location = isCompleteOrg ? org["Location (links for mult. locations) "] : org.location;
 
                   return (
                     <div key={index} className="border-b border-gray-100 pb-3">
@@ -905,10 +906,14 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
                             </a>
                           )}
 
+                          {location && (
+                            <p className="text-xs text-gray-600 mt-2">
+                              {location}
+                            </p>
+                          )}
+                          
                           {description && (
                             <p className="text-xs text-gray-600 mt-2">
-                              {/*{description.substring(0, 120)}
-                              {description.length > 120 ? "..." : ""}*/}
                               {description}
                             </p>
                           )}
