@@ -848,6 +848,7 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
               </div>
               <div className="space-y-3">
                 {locationData.map((org, index) => {
+                  console.log(org);
                   // Check if the organization is a complete organization object or just the sidebar info
                   const isCompleteOrg =
                     org["Category of Resources "] !== undefined;
