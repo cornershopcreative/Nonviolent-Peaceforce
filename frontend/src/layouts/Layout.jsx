@@ -55,7 +55,6 @@ const Layout = ({ children }) => {
           {/* Right: language & accessibility */}
           <div className="hidden md:flex gap-3">
             <div className="relative flex items-center">
-              <span className="text-xl mr-2">Translate</span>
               <div id="google_translate_element"></div>
             </div>
           </div>
