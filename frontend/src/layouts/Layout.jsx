@@ -53,10 +53,10 @@ const Layout = ({ children }) => {
 
           {/* Right: language & accessibility */}
           <div className="hidden md:flex gap-3">
-            <div 
-              id="google_translate_element"
-              className="flex items-center"
-            ></div>
+            <div className="relative flex items-center">
+              <span className="text-xl mr-2">🈯</span>
+              <div id="google_translate_element"></div>
+            </div>
           </div>
         </div>
 
@@ -91,6 +91,8 @@ const Layout = ({ children }) => {
             padding: 8px 12px !important;
             border-radius: 6px !important;
             font-family: 'Garet Regular' !important;
+            max-height: 400px !important;
+            overflow-y: auto !important;
           }
           .goog-te-combo:hover {
             background-color: #333366 !important;
