@@ -865,7 +865,7 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
                     ? org["Description of Resources"]
                     : null;
                   const website = isCompleteOrg ? org["Website URL"] : null;
-                  const location = isCompleteOrg ? org["Location (links for mult. locations) "] : org.location;
+                  const location = isCompleteOrg ? org["Location (links for mult. locations)"] : org.location;
 
                   return (
                     <div key={index} className="border-b border-gray-100 pb-3">
