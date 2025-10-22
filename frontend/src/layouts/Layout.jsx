@@ -1,6 +1,28 @@
 import React, { useState } from "react";
 
 const Layout = ({ children }) => {
+
+  useEffect(() => {
+    // Load Google Translate script for translation
+    const addScript = document.createElement("script");
+    addScript.setAttribute(
+      "src",
+      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    );
+    document.body.appendChild(addScript);
+
+    // Initialize Google Translate
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+        },
+        "google_translate_element"
+      );
+    };
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <header>
@@ -31,19 +53,17 @@ const Layout = ({ children }) => {
 
           {/* Right: language & accessibility */}
           <div className="hidden md:flex gap-3">
-            <button className="bg-[#1A1A40] text-green-400 w-10 h-10 rounded-md flex items-center justify-center hover:bg-[#333366] transition">
-              🈯
-            </button>
-            <button className="bg-[#1A1A40] text-blue-400 w-10 h-10 rounded-md flex items-center justify-center hover:bg-[#333366] transition">
-              ♿
-            </button>
+            <div 
+              id="google_translate_element"
+              className="flex items-center"
+            ></div>
           </div>
         </div>
 
         {/* Hero Section */}
         <div className="bg-[#0d0b5c] text-center py-24 px-6 relative">
           <h1
-            className="text-5xl font-bold text-[#E4F046] mb-4"
+            className="text-7xl font-bold text-[#E4F046] mb-4"
             style={{ fontFamily: "TC Milo" }}
           >
             Safety Connection Map
@@ -62,12 +82,41 @@ const Layout = ({ children }) => {
         {children}
       </main>
 
+      <style jsx global>{`
+        /* Style Google Translate widget */
+          .goog-te-combo {
+            background-color: #1A1A40 !important;
+            color: #E4F046 !important;
+            border: none !important;
+            padding: 8px 12px !important;
+            border-radius: 6px !important;
+            font-family: 'Garet Regular' !important;
+          }
+          .goog-te-combo:hover {
+            background-color: #333366 !important;
+          }
+          .goog-te-gadget {
+            font-family: 'Garet Regular' !important;
+            color: transparent !important;
+          }
+          .goog-te-gadget span {
+            display: none !important;
+          }
+          /* Hide Google Translate toolbar at top */
+          .goog-te-banner-frame {
+            display: none !important;
+          }
+          body {
+            top: 0 !important;
+          }
+      `}</style>
+
       <footer className="bg-indigo-900 py-8 px-6 text-white">
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {/* Column 1 - Connecting Communities */}
           <div>
             <h2
-              className="font-bold text-xl text-yellow-300"
+              className="font-bold text-3xl text-[#E4F046]"
               style={{ fontFamily: "TC Milo" }}
             >
               CONNECTING
@@ -103,7 +152,9 @@ const Layout = ({ children }) => {
               A project of
             </p>
             <div className="w-16 h-16">
-              <img src="/NP-RBG.png" alt="" />
+              <a href="https://nonviolentpeaceforce.org/">
+                <img src="/NP-RBG.png" alt="" />
+              </a>
             </div>
           </div>
 
@@ -112,8 +163,10 @@ const Layout = ({ children }) => {
             <p className="mb-2" style={{ fontFamily: "Garet Regular" }}>
               Powered by
             </p>
-            <div className="w-16 h-16 bg-white flex items-center justify-center">
-              <span className="font-bold text-blue-500 text-lg">DSSD</span>
+            <div className="w-16 h-16">
+              <a href="https://dssdglobal.org/">
+                <img src="/DSSD_logo.png" alt="" />
+              </a>
             </div>
           </div>
         </div>

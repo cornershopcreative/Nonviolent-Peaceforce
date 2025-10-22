@@ -68,7 +68,7 @@ const Home = () => {
           {/* Left side - Text content */}
           <div className="max-w-xs">
             <h2
-              className="text-2xl font-bold mb-4 text-indigo-900"
+              className="text-4xl font-bold mb-4 text-indigo-900"
               style={{ fontFamily: "TC Milo" }}
             >
               OTHER RESOURCES
