@@ -15,7 +15,7 @@ const Map = () => {
       {/* Top Section / Hero */}
       <section className="bg-indigo-950 text-white p-8 flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-2">Resource Map</h1>
-        <h2 className="text-2xl">Find Nonviolent Resources Near You</h2>
+        <h2 className="text-2xl">Find Support Near You</h2>
       </section>
 
       {/* Main Content Section */}

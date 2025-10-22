@@ -907,8 +907,9 @@ const MapComponent = ({ onLocationSelect, height = "600px" }) => {
 
                           {description && (
                             <p className="text-xs text-gray-600 mt-2">
-                              {description.substring(0, 120)}
-                              {description.length > 120 ? "..." : ""}
+                              {/*{description.substring(0, 120)}
+                              {description.length > 120 ? "..." : ""}*/}
+                              {description}
                             </p>
                           )}
                         </div>
