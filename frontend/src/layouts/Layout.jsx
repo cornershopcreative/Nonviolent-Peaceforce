@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
       new window.google.translate.TranslateElement(
         {
           pageLanguage: "en",
+          includedLanguages: "es,fr,ar,zh-CN,vi,ko,ru,pt,de,ja,hi,tl,sw,am,so,bn,ur,pa",
           layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
         },
         "google_translate_element"
@@ -54,7 +55,7 @@ const Layout = ({ children }) => {
           {/* Right: language & accessibility */}
           <div className="hidden md:flex gap-3">
             <div className="relative flex items-center">
-              <span className="text-xl mr-2">🈯</span>
+              <span className="text-xl mr-2">Translate</span>
               <div id="google_translate_element"></div>
             </div>
           </div>
